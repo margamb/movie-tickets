@@ -1,0 +1,12 @@
+.reset {
+  background-color: grey;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  fill: #fff;
+  padding: 2px 3px;
+  border-radius: 100%;
+  font-weight: bold;
+  font-size: 20px;
+  width: 40px;
+}
