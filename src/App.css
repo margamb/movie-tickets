@@ -1,5 +1,8 @@
 .App {
   width: 320px;
-  height: 568px;
+  max-height: 100vh;
+  margin: auto;
+  position: relative;
+  overflow-y: scroll;
   /* background-color: rgb(202, 200, 200); */
 }

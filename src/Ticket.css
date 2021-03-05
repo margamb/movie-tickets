@@ -37,9 +37,9 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  margin-top: 55px;
+  padding-bottom: 72px;
 }
 
 .ticket-detail {
@@ -168,4 +168,34 @@
 .code-6 {
   width: 16px;
   margin-left: 8px;
+}
+
+@media only screen and (min-height: 600px) {
+  .ticket {
+    padding-bottom: 95px;
+  }
+
+  @media only screen and (min-height: 650px) {
+    .ticket {
+      padding-bottom: 100px;
+    }
+  }
+
+  @media only screen and (min-height: 700px) {
+    .ticket {
+      padding-bottom: 120px;
+    }
+  }
+
+  @media only screen and (min-height: 800px) {
+    .ticket {
+      padding-bottom: 160px;
+    }
+  }
+
+  @media only screen and (min-height: 850px) {
+    .ticket {
+      padding-bottom: 210px;
+    }
+  }
 }
