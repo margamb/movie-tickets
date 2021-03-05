@@ -1,5 +1,5 @@
 .loading {
-  animation: load 3s;
+  animation: load 1.5s;
 }
 
 @keyframes load {
@@ -19,33 +19,153 @@
   }
 }
 
+.ticket-title-movie {
+  font-size: 18px;
+  color: gray;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .my-ticket {
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 5px;
+  color: gray;
 }
 .ticket {
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 55px;
 }
 
 .ticket-detail {
-  width: 80%;
-  background: red;
-  margin-top: -50px;
+  width: 90%;
+  /* background: red; */
+  margin-top: -140px;
   display: flex;
   flex-direction: column;
 }
 
+.tickets-details-movies {
+  width: 90%;
+  margin: auto;
+}
+
+.ticket-poster-square {
+  width: 100%;
+  height: 250px;
+  background: blue;
+  overflow: hidden;
+}
 .ticket-poster-movie {
-  width: 80%;
-  height: auto;
-  align-self: center;
+  width: 100%;
 }
 
 .ticket-seats {
-  padding: 5px;
+  margin-left: 5px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.ticket-book-details {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-around;
+  /* background: green; */
+}
+
+.ticket-book-clock {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 30%;
+  padding-left: 3px;
+  /* margin-bottom: 10px; */
+}
+
+.ticket-book-calendar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 70%;
+  /* background: pink; */
+  padding-left: 3px;
+  /* margin-bottom: 10px; */
+}
+
+.ticket-book-money {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 30%;
+  padding-left: 3px;
+  /* margin-bottom: 10px; */
+}
+
+.ticket-book-seat {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 70%;
+  padding-left: 3px;
+  /* margin-bottom: 10px; */
+}
+
+.ticket-seat-icon {
+  width: 18px;
+  height: auto;
+  fill: grey;
+}
+
+.bar-code {
+  width: 90%;
+  height: 55px;
+  /* background: rgb(187, 185, 185); */
+  margin-bottom: 20px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.code {
+  height: 55px;
+  background: black;
+}
+
+.code-1 {
+  width: 10px;
+  margin-left: 3px;
+}
+
+.code-2 {
+  width: 5px;
+  margin-left: 8px;
+}
+
+.code-3 {
+  width: 7px;
+  margin-left: 2px;
+}
+
+.code-4 {
+  width: 12px;
+  margin-left: 4px;
+}
+
+.code-5 {
+  width: 14px;
+  margin-left: 6px;
+}
+
+.code-6 {
+  width: 16px;
+  margin-left: 8px;
 }
