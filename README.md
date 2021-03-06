@@ -1,6 +1,6 @@
 # Movie Tickets
 
-If you want to see the demo of this proyect deployed, you can take a look [here](https://margamb.github.io/rick-translator/)
+If you want to see the demo of this proyect deployed, you can take a look [here](https://margamb.github.io/movie-tickets/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
