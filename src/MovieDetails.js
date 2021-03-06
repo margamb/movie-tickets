@@ -2,10 +2,12 @@ import React from 'react';
 import './MovieDetails.css';
 import IconReset from './icons/IconReset.js';
 import { Link } from 'react-router-dom';
+// import ScrollToTop from './ScrollToTop.js';
 
 const MovieDetails = ({ movies }) => {
   return (
     <div className="movieInfo">
+      {/* <ScrollToTop /> */}
       <Link to="/" style={{ textDecoration: 'none' }}>
         <IconReset />
       </Link>

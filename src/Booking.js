@@ -44,21 +44,21 @@ const Booking = ({
       <ul className="seats-options">
         <li className="seat-information">
           <div className="seat"></div>
-          <smal className="text-options">Avaliable</smal>
+          <p className="text-options">Avaliable</p>
         </li>
 
         <li className="seat-information">
           <div className="seat selected"></div>
-          <smal className="text-options">Selected</smal>
+          <p className="text-options">Selected</p>
         </li>
 
         <li className="seat-information">
           <div className="seat occupied"></div>
-          <smal className="text-options">Occupied</smal>
+          <p className="text-options">Occupied</p>
         </li>
       </ul>
       <div className="screen"></div>
-      <smal className="screen-text">screen</smal>
+      <p className="screen-text">screen</p>
 
       <div onClick={handleSelected}>
         <Seats seats={seats} occupied={occupied} selected={selected} />

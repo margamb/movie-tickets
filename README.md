@@ -1,8 +1,31 @@
-# Getting Started with Create React App
+# Movie Tickets
+
+If you want to see the demo of this proyect deployed, you can take a look [here](https://margamb.github.io/rick-translator/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## How it works
+
+![](src/img/flow-app.jpg)
+
+- Click to poster image to choose the movie.
+- Book Ticket.
+- Click on the seat icon to choose seats, can choose time and pay the ticket.
+- Finally, the ticket appear with all information and an animation.
+
+### Technologies used
+
+- React
+- HTML
+- CSS
+
+### What I have learned
+
+- How to change the view with react route.
+- How to pass the id.movies to url.
+- How to choose seats.
+
+![](src/img/movie-app-screenshot.png)
 
 In the project directory, you can run:
 

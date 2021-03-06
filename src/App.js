@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Switch, Route } from 'react-router-dom';
+
 import './App.css';
 import './myreset.css';
 import movieAPI from './movieAPI.js';
@@ -7,18 +9,22 @@ import Movies from './Movies.js';
 import MovieDetails from './MovieDetails.js';
 import Booking from './Booking.js';
 import Ticket from './Ticket.js';
-import { Switch, Route } from 'react-router-dom';
 
 function App() {
   const [selected, setSelected] = useState([]);
   const [selectedTime, setSelectedTime] = useState(0);
+
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  //   console.log('page is mount');
+  // }, []);
 
   const handleReset = () => {
     setSelected([]);
     setSelectedTime(0);
   };
 
-  //render different components -> diferentes pantallas
+  //render different components -> diferentes views
   const renderMovieDetails = (props) => {
     const routeMoviesId = parseInt(props.match.params.id);
     const movies = movieAPI.find((movie) => movie.id === routeMoviesId);

@@ -25,7 +25,6 @@ function getClassName(letter) {
     className += 'code-3';
   }
 
-  console.log({ className });
   return className;
 }
 
@@ -34,7 +33,6 @@ const Ticket = ({ handleReset, movies, selected, selectedTime }) => {
   const seatsPrice = seatsSelected * movies.price;
 
   const movieTitle = movies.movieTitle.split('');
-  console.log(movieTitle);
 
   return (
     <div className="ticket">
