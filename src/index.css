@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --gray-200: #f1f1f2;
+  --gray-500: #dcddde;
+  --gray-600: #c6c8ca;
+  --primary: #b34180;
+  --secondary: #822659;
+  --primary-light: #f8a1d1;
+  /* --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+}

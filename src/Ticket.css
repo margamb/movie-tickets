@@ -58,9 +58,9 @@
 .ticket-poster-square {
   width: 100%;
   height: 250px;
-  background: blue;
   overflow: hidden;
 }
+
 .ticket-poster-movie {
   width: 100%;
 }
@@ -79,7 +79,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-content: space-around;
-  /* background: green; */
 }
 
 .ticket-book-clock {
@@ -88,7 +87,6 @@
   align-items: center;
   width: 30%;
   padding-left: 3px;
-  /* margin-bottom: 10px; */
 }
 
 .ticket-book-calendar {
@@ -96,9 +94,7 @@
   justify-content: flex-end;
   align-items: center;
   width: 70%;
-  /* background: pink; */
   padding-left: 3px;
-  /* margin-bottom: 10px; */
 }
 
 .ticket-book-money {
@@ -107,7 +103,6 @@
   align-items: center;
   width: 30%;
   padding-left: 3px;
-  /* margin-bottom: 10px; */
 }
 
 .ticket-book-seat {
@@ -116,13 +111,12 @@
   align-items: center;
   width: 70%;
   padding-left: 3px;
-  /* margin-bottom: 10px; */
 }
 
 .ticket-seat-icon {
   width: 18px;
   height: auto;
-  fill: grey;
+  fill: var(--primary-light);
 }
 
 .bar-code {
@@ -137,7 +131,7 @@
 
 .code {
   height: 55px;
-  background: black;
+  background: var(--black);
 }
 
 .code-1 {

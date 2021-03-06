@@ -1,7 +1,6 @@
 .booking {
   width: 100%;
   height: 100vh;
-  background-color: #cfcfcf;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,16 +12,16 @@
   margin-bottom: 5px;
   font-size: 18px;
 }
-.occupied {
-  background-color: #fff;
-}
+/* .occupied {
+  background-color: var(--gray-600);
+} */
 
 .selectedSeat {
-  background-color: #444451;
+  background-color: var(--primary-light);
 }
 
 .seat {
-  border: 2px solid #444451;
+  border: 2px solid var(--primary-light);
   height: 20px;
   width: 22px;
   margin: 5px;
@@ -31,31 +30,30 @@
 }
 
 .seat.selected {
-  background-color: #444451;
+  background-color: var(--primary-light);
   border: none;
 }
 
 .seat.occupied {
-  background-color: black;
+  background-color: var(--gray-600);
   border: none;
 }
 
 .screen {
   width: 85%;
   height: 10px;
-  /* background-image: linear-gradient(#6241f6, #fff6b7); */
-  background-color: #444451;
+  background-color: var(--gray-600);
   margin-top: 20px;
 }
 .screen-text {
   font-size: 10px;
-  color: #444451;
+  color: var(--black);
 }
 
 .seats-options {
   width: 90%;
   height: 50px;
-  color: #fff;
+  color: var(--white);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -87,21 +85,24 @@
 .schedules {
   width: 250px;
   margin-top: 20px;
-  color: #fff;
+  color: var(--white);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .schedules-hours {
-  /* border: 2px solid #444451; */
-  background-color: #444451;
+  background-color: var(--primary-light);
   border-radius: 10%;
   padding: 2px 5px;
   font-weight: bold;
   cursor: pointer;
   list-style: none;
   font-size: 14px;
+}
+
+.schedules-hours:hover {
+  background-color: var(--primary);
 }
 
 .schedules-hours:first-child {
@@ -122,11 +123,15 @@
   margin-top: 20px;
   width: 255px;
   text-transform: uppercase;
-  background-color: #444451;
+  background-color: var(--primary);
   font-weight: bold;
   color: #fff;
   padding: 3px 3px;
   border: none;
+}
+
+.btn-pay:hover {
+  background-color: var(--secondary);
 }
 
 .btn-pay:focus {
@@ -134,7 +139,8 @@
 }
 
 .active-hours {
-  background-color: black;
+  background-color: var(--primary);
+  box-shadow: 2px 2px 12px var(--primary);
 }
 
 .seat:not(.occupied):hover {
