@@ -35,9 +35,11 @@ const Booking = ({
     setSelectedTime(time);
   };
 
+  const isButtonActive = selectedTime && selected.length > 0;
+
   return (
     <div className="booking">
-      <Link to="/" style={{ textDecoration: 'none' }}>
+      <Link to="/" style={{ textDecoration: 'none' }} onClick={handleReset}>
         <IconReset />
       </Link>
       <p className="movie-title">{movies.movieTitle}</p>
@@ -81,7 +83,10 @@ const Booking = ({
       </div>
 
       <Link to={`/ticket/${movies.id}`}>
-        <button className="btn-pay">Pay ticket</button>
+        {/* <button className="btn-pay btn-pay-active">Pay ticket</button> */}
+        <button className={`btn-pay ${isButtonActive ? 'btn-pay-active' : ''}`}>
+          Pay ticket
+        </button>
       </Link>
     </div>
   );

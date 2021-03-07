@@ -124,13 +124,16 @@
   margin-top: 20px;
   width: 255px;
   text-transform: uppercase;
-  background-color: var(--primary);
+  background-color: var(--gray-600);
   font-weight: bold;
-  color: #fff;
+  color: var(--white);
   padding: 3px 3px;
   border: none;
 }
 
+.btn-pay-active {
+  background-color: var(--primary);
+}
 .btn-pay:hover {
   background-color: var(--secondary);
 }
