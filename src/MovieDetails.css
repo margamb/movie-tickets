@@ -1,4 +1,4 @@
-.poster1 {
+.details-poster {
   width: 100%;
   height: auto;
   border-radius: 10px;
@@ -8,12 +8,12 @@
   box-shadow: 6px 6px 13px rgb(229, 226, 226);
 }
 
-.titleMovie {
+.details-title-movie {
   font-size: 22px;
   margin-bottom: 7px;
 }
 
-.movieInfo {
+.details-movieInfo {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -22,7 +22,7 @@
   justify-content: center;
 }
 
-.infoDetails {
+.details-info-movie {
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -30,7 +30,7 @@
   align-items: flex-start;
 }
 
-.overview {
+.details-overview {
   text-align: left;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -40,36 +40,36 @@
   font-size: 16px;
 }
 
-.priceTicket {
+.details-price-ticket {
   font-weight: bold;
   font-size: 18px;
   margin-bottom: -6px;
 }
 
-.timetable {
+.details-timetable {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.dateDetails {
+.details-date {
   margin-right: 18px;
 }
 
-.hours {
+.details-hours {
   border-radius: 10px;
   border-bottom: solid 2px var(--gray-600);
   padding: 5px;
 }
 
-.time-hours {
+.details-time-hours {
   display: flex;
   justify-content: space-between;
   width: 120px;
 }
 
-.btn-book-ticket {
+.details-btn-book-ticket {
   text-transform: uppercase;
   margin-top: 18px;
   width: 100%;
@@ -83,40 +83,40 @@
   cursor: pointer;
 }
 
-.btn-book-ticket:hover {
+.details-btn-book-ticket:hover {
   background-color: var(--secondary);
 }
 
-.link-book-ticket {
+.details-link-book-ticket {
   width: 80%;
 }
 
 @media only screen and (min-height: 600px) {
-  .poster1 {
+  .details-poster {
     margin-top: -298px;
   }
 }
 
 @media only screen and (min-height: 650px) {
-  .poster1 {
+  .details-poster {
     margin-top: -245px;
   }
 }
 
 @media only screen and (min-height: 700px) {
-  .poster1 {
+  .details-poster {
     margin-top: -185px;
   }
 }
 
 @media only screen and (min-height: 800px) {
-  .poster1 {
+  .details-poster {
     margin-top: -110px;
   }
 }
 
 @media only screen and (min-height: 850px) {
-  .poster1 {
+  .details-poster {
     margin-top: -30px;
   }
 }

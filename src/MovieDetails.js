@@ -6,31 +6,31 @@ import { Link } from 'react-router-dom';
 
 const MovieDetails = ({ movies }) => {
   return (
-    <div className="movieInfo">
+    <div className="details-movieInfo">
       {/* <ScrollToTop /> */}
       <Link to="/" style={{ textDecoration: 'none' }}>
         <IconReset />
       </Link>
-      <img className="poster1" src={movies.urlImage} />
-      <h1 className="titleMovie">{movies.movieTitle}</h1>
-      <div className="infoDetails">
-        <p className="overview">{movies.overview}</p>
-        <p className="priceTicket">${movies.price}</p>
-        <div className="timetable">
-          <p className="dateDetails">{movies.date}</p>
-          <ul className="time-hours">
+      <img className="details-poster" src={movies.urlImage} />
+      <h1 className="details-title-movie">{movies.movieTitle}</h1>
+      <div className="details-info-movie">
+        <p className="details-overview">{movies.overview}</p>
+        <p className="details-price-ticket">${movies.price}</p>
+        <div className="details-timetable">
+          <p className="details-date">{movies.date}</p>
+          <ul className="details-time-hours">
             {movies.schedules?.map((schedule) => (
-              <li className="hours">{schedule}</li>
+              <li className="details-hours">{schedule}</li>
             ))}
           </ul>
         </div>
       </div>
       <Link
-        className="link-book-ticket"
+        className="details-link-book-ticket"
         to={`/booking/${movies.id}`}
         style={{ textDecoration: 'none' }}
       >
-        <button className="btn-book-ticket">Book Ticket</button>
+        <button className="details-btn-book-ticket">Book Ticket</button>
       </Link>
     </div>
   );

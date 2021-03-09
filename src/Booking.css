@@ -8,20 +8,17 @@
   padding: 35px 5px 65px 0px;
 }
 
-.movie-title {
+.booking-movie-title {
   margin-bottom: 5px;
   font-size: 18px;
 }
-/* .occupied {
-  background-color: var(--gray-600);
-} */
 
 .selectedSeat {
   background-color: var(--primary-light);
   box-shadow: 2px 2px 12px var(--gray-600);
 }
 
-.seat {
+.booking-seat {
   border: 2px solid var(--primary-light);
   height: 20px;
   width: 22px;
@@ -30,28 +27,28 @@
   border-top-right-radius: 10px;
 }
 
-.seat.selected {
+.booking-seat.selected {
   background-color: var(--primary-light);
   border: none;
 }
 
-.seat.occupied {
+.booking-seat.occupied {
   background-color: var(--gray-600);
   border: none;
 }
 
-.screen {
+.booking-screen {
   width: 85%;
   height: 10px;
   background-color: var(--gray-600);
   margin-top: 20px;
 }
-.screen-text {
+.booking-screen-text {
   font-size: 10px;
   color: var(--black);
 }
 
-.seats-options {
+.booking-seats-options {
   width: 90%;
   height: 50px;
   color: var(--white);
@@ -62,13 +59,13 @@
   font-weight: 700;
 }
 
-.seat-information {
+.booking-seat-information {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.text-options {
+.booking-text-options {
   font-size: 10px;
   color: #444451;
   font-weight: 700;
@@ -83,7 +80,7 @@
   margin-top: 10px;
 }
 
-.schedules {
+.booking-schedules {
   width: 250px;
   margin-top: 20px;
   color: var(--white);
@@ -92,7 +89,7 @@
   align-items: center;
 }
 
-.schedules-hours {
+.booking-schedules-hours {
   background-color: var(--primary-light);
   border-radius: 10%;
   padding: 2px 5px;
@@ -102,25 +99,25 @@
   font-size: 14px;
 }
 
-.schedules-hours:hover {
+.booking-schedules-hours:hover {
   background-color: var(--primary);
 }
 
-.schedules-hours:first-child {
+.booking-schedules-hours:first-child {
   margin-right: 10px;
 }
 
-.schedules-info {
+.booking-schedules-info {
   display: flex;
 }
 
-.schedules-day {
+.booking-schedules-day {
   font-size: 14px;
   color: #444451;
   font-weight: 700;
 }
 
-.btn-pay {
+.booking-btn-pay {
   margin-top: 20px;
   width: 255px;
   text-transform: uppercase;
@@ -131,14 +128,14 @@
   border: none;
 }
 
-.btn-pay-active {
+.booking-btn-pay-active {
   background-color: var(--primary);
 }
-.btn-pay:hover {
+.booking-btn-pay:hover {
   background-color: var(--secondary);
 }
 
-.btn-pay:focus {
+.booking-btn-pay:focus {
   outline: 0;
 }
 
@@ -147,12 +144,12 @@
   box-shadow: 2px 2px 12px var(--primary);
 }
 
-.seat:not(.occupied):hover {
+.booking-seat:not(.occupied):hover {
   cursor: pointer;
   transform: scale(1.2);
 }
 
-.seat-information .seat:not(.occupied):hover {
+.booking-seat-information .booking-seat:not(.occupied):hover {
   cursor: default;
   transform: scale(1);
 }

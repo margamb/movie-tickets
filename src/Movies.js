@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 
 const Movies = ({ movies }) => {
   return (
-    <ul className="moviePosters">
+    <ul className="movies-moviePosters">
       {movies.map((movie) => (
-        <li className="poster" Key={movie.id}>
+        <li className="movies-poster" Key={movie.id}>
           <Link to={`/detail/${movie.id}`} style={{ textDecoration: 'none' }}>
-            <img className="imgPoster" src={movie.urlImage} />
+            <img className="movies-imgPoster" src={movie.urlImage} />
           </Link>
         </li>
       ))}

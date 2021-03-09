@@ -12,7 +12,7 @@ const Seats = ({ seats, occupied, selected }) => {
           : isSelected
           ? 'selectedSeat'
           : '';
-        return <div id={id} className={`seat ${className}`}></div>;
+        return <div id={id} className={`booking-seat ${className}`}></div>;
       })}
     </div>
   );

@@ -42,36 +42,36 @@ const Booking = ({
       <Link to="/" style={{ textDecoration: 'none' }} onClick={handleReset}>
         <IconReset />
       </Link>
-      <p className="movie-title">{movies.movieTitle}</p>
-      <ul className="seats-options">
-        <li className="seat-information">
-          <div className="seat"></div>
-          <p className="text-options">Avaliable</p>
+      <p className="booking-movie-title">{movies.movieTitle}</p>
+      <ul className="booking-seats-options">
+        <li className="booking-seat-information">
+          <div className="booking-seat"></div>
+          <p className="booking-text-options">Avaliable</p>
         </li>
 
-        <li className="seat-information">
-          <div className="seat selected"></div>
-          <p className="text-options">Selected</p>
+        <li className="booking-seat-information">
+          <div className="booking-seat selected"></div>
+          <p className="booking-text-options">Selected</p>
         </li>
 
-        <li className="seat-information">
-          <div className="seat occupied"></div>
-          <p className="text-options">Occupied</p>
+        <li className="booking-seat-information">
+          <div className="booking-seat occupied"></div>
+          <p className="booking-text-options">Occupied</p>
         </li>
       </ul>
-      <div className="screen"></div>
-      <p className="screen-text">screen</p>
+      <div className="booking-screen"></div>
+      <p className="booking-screen-text">screen</p>
 
       <div onClick={handleSelected}>
         <Seats seats={seats} occupied={occupied} selected={selected} />
       </div>
 
-      <div className="schedules">
-        <p className="schedules-day">{movieApi[0].date}</p>
-        <ul className="schedules-info">
+      <div className="booking-schedules">
+        <p className="booking-schedules-day">{movieApi[0].date}</p>
+        <ul className="booking-schedules-info">
           {movies.schedules?.map((schedule) => (
             <li
-              className={`schedules-hours ${
+              className={`booking-schedules-hours ${
                 selectedTime === schedule ? 'active-hours' : ''
               }`}
               onClick={() => chooseTime(schedule)}
@@ -84,7 +84,11 @@ const Booking = ({
 
       <Link to={`/ticket/${movies.id}`}>
         {/* <button className="btn-pay btn-pay-active">Pay ticket</button> */}
-        <button className={`btn-pay ${isButtonActive ? 'btn-pay-active' : ''}`}>
+        <button
+          className={`booking-btn-pay ${
+            isButtonActive ? 'booking-btn-pay-active' : ''
+          }`}
+        >
           Pay ticket
         </button>
       </Link>
