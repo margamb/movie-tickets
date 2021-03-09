@@ -4,11 +4,11 @@ import { Switch, Route } from 'react-router-dom';
 import './App.css';
 import './myreset.css';
 import movieAPI from './movieAPI.js';
-import Footer from './Footer.js';
-import Movies from './Movies.js';
-import MovieDetails from './MovieDetails.js';
-import Booking from './Booking.js';
-import Ticket from './Ticket.js';
+import Footer from './components/Footer.js';
+import Movies from './components/Movies.js';
+import MovieDetails from './components/MovieDetails.js';
+import Booking from './components/Booking.js';
+import Ticket from './components/Ticket.js';
 
 function App() {
   const [selected, setSelected] = useState([]);

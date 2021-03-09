@@ -1,9 +1,9 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import './Footer.css';
-import MovieIcon from './icons/MovieIcon.js';
-import SeatIcon from './icons/SeatIcon.js';
-import TicketIcon from './icons/TicketIcon.js';
+import MovieIcon from '../icons/MovieIcon.js';
+import SeatIcon from '../icons/SeatIcon.js';
+import TicketIcon from '../icons/TicketIcon.js';
 const Footer = (props) => {
   // change color icons footer -> to know on which page it is
   const location = useLocation();

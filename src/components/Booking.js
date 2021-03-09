@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import IconReset from './icons/IconReset';
+import IconReset from '../icons/IconReset';
 import Seats from './Seats';
 import './Booking.css';
-import movieApi from './movieAPI';
+import movieApi from '../movieAPI';
 import { Link } from 'react-router-dom';
 
 const Booking = ({

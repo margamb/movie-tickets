@@ -1,6 +1,6 @@
 import React from 'react';
 import './MovieDetails.css';
-import IconReset from './icons/IconReset.js';
+import IconReset from '../icons/IconReset.js';
 import { Link } from 'react-router-dom';
 // import ScrollToTop from './ScrollToTop.js';
 

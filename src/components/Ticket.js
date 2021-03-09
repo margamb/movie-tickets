@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import IconReset from './icons/IconReset.js';
-import SeatIcon from './icons/SeatIcon.js';
-import IconCalendar from './icons/IconCalendar.js';
-import IconClock from './icons/IconClock.js';
-import IconMoney from './icons/IconMoney.js';
+import IconReset from '../icons/IconReset.js';
+import SeatIcon from '../icons/SeatIcon.js';
+import IconCalendar from '../icons/IconCalendar.js';
+import IconClock from '../icons/IconClock.js';
+import IconMoney from '../icons/IconMoney.js';
 
 import './Ticket.css';
 
