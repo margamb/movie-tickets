@@ -14,7 +14,7 @@ const Seats = ({ seats, occupied, selected }) => {
         const isOccupied = occupied.includes(id);
         const isSelected = selected.includes(id);
 
-        return <div id={id} className={`booking-seat ${getClassName(isOccupied, isSelected)}`}></div>;
+        return <div key={id} id={id} className={`booking-seat ${getClassName(isOccupied, isSelected)}`}></div>;
       })}
     </div>
   );

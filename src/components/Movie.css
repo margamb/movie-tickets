@@ -4,7 +4,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
+  align-content: start;
+  min-height: 100vh;
 }
 
 .movies-poster {
@@ -13,6 +14,7 @@
 }
 
 .movies-poster:first-child {
+  margin-top: 12px;
   width: 95%;
   height: 250px;
   margin-bottom: 10px;

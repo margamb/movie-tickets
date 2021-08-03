@@ -18,7 +18,7 @@ const MovieDetails = ({ movies }) => {
           <p className="details-date">{movies.date}</p>
           <ul className="details-time-hours">
             {movies.schedules?.map((schedule) => (
-              <li className="details-hours">{schedule}</li>
+              <li className="details-hours" key={schedule}>{schedule}</li>
             ))}
           </ul>
         </div>

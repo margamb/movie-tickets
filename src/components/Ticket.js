@@ -40,7 +40,6 @@ const Ticket = ({ handleReset, movies, selected, selectedTime }) => {
         <IconReset />
       </Link>
       <div className="ticket-detail loading">
-        {/* loading */}
         <p className="my-ticket">My tickets</p>
         <div className="ticket-poster-square">
           <img className="ticket-poster-movie" src={movies.urlImage} alt="movie poster"/>
@@ -69,10 +68,10 @@ const Ticket = ({ handleReset, movies, selected, selectedTime }) => {
         </div>
       </div>
       <div className="bar-code loading">
-        {movieTitle.map((letter) => {
+        {movieTitle.map((letter, idx) => {
           const className = getClassName(letter);
           return (
-            <div className={className}></div>
+            <div key={idx} className={className}></div>
           );
         })}
       </div>

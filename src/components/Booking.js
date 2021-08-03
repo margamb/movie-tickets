@@ -70,7 +70,7 @@ const Booking = ({
         <p className="booking-schedules-day">{movieApi[0].date}</p>
         <ul className="booking-schedules-info">
           {movies.schedules?.map((schedule) => (
-            <li
+            <li key={schedule}
               className={`booking-schedules-hours ${
                 selectedTime === schedule ? 'active-hours' : ''
               }`}
