@@ -1,5 +1,12 @@
 import React from 'react';
 
+function getClassName(isOccupied, isSelected) {
+  if (isOccupied) return 'occupied'
+  if (isSelected) return 'selectedSeat'
+
+  return ''
+}
+
 const Seats = ({ seats, occupied, selected }) => {
   return (
     <div className="container-seats">
@@ -7,12 +14,7 @@ const Seats = ({ seats, occupied, selected }) => {
         const isOccupied = occupied.includes(id);
         const isSelected = selected.includes(id);
 
-        const className = isOccupied
-          ? 'occupied'
-          : isSelected
-          ? 'selectedSeat'
-          : '';
-        return <div id={id} className={`booking-seat ${className}`}></div>;
+        return <div id={id} className={`booking-seat ${getClassName(isOccupied, isSelected)}`}></div>;
       })}
     </div>
   );

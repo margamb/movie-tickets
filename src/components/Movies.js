@@ -6,9 +6,9 @@ const Movies = ({ movies }) => {
   return (
     <ul className="movies-moviePosters">
       {movies.map((movie) => (
-        <li className="movies-poster" Key={movie.id}>
+        <li className="movies-poster" key={movie.id}>
           <Link to={`/detail/${movie.id}`} style={{ textDecoration: 'none' }}>
-            <img className="movies-imgPoster" src={movie.urlImage} />
+            <img className="movies-imgPoster" src={movie.urlImage} alt="movie poster"/>
           </Link>
         </li>
       ))}

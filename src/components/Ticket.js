@@ -43,7 +43,7 @@ const Ticket = ({ handleReset, movies, selected, selectedTime }) => {
         {/* loading */}
         <p className="my-ticket">My tickets</p>
         <div className="ticket-poster-square">
-          <img className="ticket-poster-movie" src={movies.urlImage} />
+          <img className="ticket-poster-movie" src={movies.urlImage} alt="movie poster"/>
         </div>
         <div className="tickets-details-movies">
           <h1 className="ticket-title-movie">{movies.movieTitle}</h1>
@@ -73,7 +73,6 @@ const Ticket = ({ handleReset, movies, selected, selectedTime }) => {
           const className = getClassName(letter);
           return (
             <div className={className}></div>
-            //   <div className="code"></div>
           );
         })}
       </div>

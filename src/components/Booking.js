@@ -17,8 +17,8 @@ const Booking = ({
   //Generate Seats
   const seatsId = [...Array(numOfSeats).keys()];
   const occupiedSeats = [45, 46, 33, 34];
-  const [seats, setSeats] = useState(seatsId);
-  const [occupied, setOccupied] = useState(occupiedSeats);
+  const [seats] = useState(seatsId);
+  const [occupied] = useState(occupiedSeats);
 
   const handleSelected = (ev) => {
     const id = parseInt(ev.target.id);
@@ -83,7 +83,6 @@ const Booking = ({
       </div>
 
       <Link to={`/ticket/${movies.id}`}>
-        {/* <button className="btn-pay btn-pay-active">Pay ticket</button> */}
         <button
           className={`booking-btn-pay ${
             isButtonActive ? 'booking-btn-pay-active' : ''

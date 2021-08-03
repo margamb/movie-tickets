@@ -5,8 +5,10 @@ import MovieIcon from '../icons/MovieIcon.js';
 import SeatIcon from '../icons/SeatIcon.js';
 import TicketIcon from '../icons/TicketIcon.js';
 const Footer = (props) => {
-  // change color icons footer -> to know on which page it is
+  // useLocation is used to know which page the user is and change the
+  // icon color depending on it
   const location = useLocation();
+
   return (
     <div className="footer">
       <div className="iconText">

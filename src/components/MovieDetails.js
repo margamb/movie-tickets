@@ -2,16 +2,14 @@ import React from 'react';
 import './MovieDetails.css';
 import IconReset from '../icons/IconReset.js';
 import { Link } from 'react-router-dom';
-// import ScrollToTop from './ScrollToTop.js';
 
 const MovieDetails = ({ movies }) => {
   return (
     <div className="details-movieInfo">
-      {/* <ScrollToTop /> */}
       <Link to="/" style={{ textDecoration: 'none' }}>
         <IconReset />
       </Link>
-      <img className="details-poster" src={movies.urlImage} />
+      <img className="details-poster" src={movies.urlImage}  alt="movie poster"/>
       <h1 className="details-title-movie">{movies.movieTitle}</h1>
       <div className="details-info-movie">
         <p className="details-overview">{movies.overview}</p>
